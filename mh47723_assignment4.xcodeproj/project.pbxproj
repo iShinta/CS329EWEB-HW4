@@ -13,6 +13,8 @@
 		7CF10E101D8EE26200D4DBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF10E0F1D8EE26200D4DBC0 /* Assets.xcassets */; };
 		7CF10E131D8EE26200D4DBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF10E111D8EE26200D4DBC0 /* LaunchScreen.storyboard */; };
 		7CF10E1E1D8EE26200D4DBC0 /* mh47723_assignment4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF10E1D1D8EE26200D4DBC0 /* mh47723_assignment4Tests.swift */; };
+		7CF10E291D8EE9D000D4DBC0 /* austin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7CF10E281D8EE9D000D4DBC0 /* austin.jpeg */; };
+		7CF10E2B1D8F24E700D4DBC0 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF10E2A1D8F24E700D4DBC0 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		7CF10E191D8EE26200D4DBC0 /* mh47723_assignment4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mh47723_assignment4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF10E1D1D8EE26200D4DBC0 /* mh47723_assignment4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mh47723_assignment4Tests.swift; sourceTree = "<group>"; };
 		7CF10E1F1D8EE26200D4DBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF10E281D8EE9D000D4DBC0 /* austin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = austin.jpeg; sourceTree = "<group>"; };
+		7CF10E2A1D8F24E700D4DBC0 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,9 @@
 				7CF10E081D8EE26200D4DBC0 /* AppDelegate.swift */,
 				7CF10E0A1D8EE26200D4DBC0 /* ViewController.swift */,
 				7CF10E0C1D8EE26200D4DBC0 /* Main.storyboard */,
+				7CF10E2A1D8F24E700D4DBC0 /* RatingControl.swift */,
 				7CF10E0F1D8EE26200D4DBC0 /* Assets.xcassets */,
+				7CF10E281D8EE9D000D4DBC0 /* austin.jpeg */,
 				7CF10E111D8EE26200D4DBC0 /* LaunchScreen.storyboard */,
 				7CF10E141D8EE26200D4DBC0 /* Info.plist */,
 			);
@@ -182,6 +188,7 @@
 				7CF10E131D8EE26200D4DBC0 /* LaunchScreen.storyboard in Resources */,
 				7CF10E101D8EE26200D4DBC0 /* Assets.xcassets in Resources */,
 				7CF10E0E1D8EE26200D4DBC0 /* Main.storyboard in Resources */,
+				7CF10E291D8EE9D000D4DBC0 /* austin.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CF10E0B1D8EE26200D4DBC0 /* ViewController.swift in Sources */,
+				7CF10E2B1D8F24E700D4DBC0 /* RatingControl.swift in Sources */,
 				7CF10E091D8EE26200D4DBC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

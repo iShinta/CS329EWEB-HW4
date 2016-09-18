@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mh47723_assignment4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +19,126 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZYp-X1-dm0" userLabel="Main View">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name and city" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZd-dQ-PhT">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="XZd-dQ-PhT" secondAttribute="trailing" id="J5U-dt-stF"/>
+                                    <constraint firstItem="XZd-dQ-PhT" firstAttribute="leading" secondItem="ZYp-X1-dm0" secondAttribute="leadingMargin" id="soR-rE-YEc"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cF3-Jv-Hkq" userLabel="Name View">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOf-0n-tSB">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vAW-2u-cgz">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="enterName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bbO-Vd-ON0"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYu-xE-d2J" userLabel="City View">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfR-es-3EZ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter city" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W66-X7-Er0">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="enterCity:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="j1u-il-EBl"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXa-GY-52B">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mt5-Rb-t1z"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abj-l1-0T1">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="cFz-9X-0VB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="183" image="austin.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="l7W-uq-KTV" userLabel="City Picture">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l7W-uq-KTV" secondAttribute="height" multiplier="15:8" id="o7d-a4-hDl"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="A9V-zo-zcE" appends="YES" id="mfH-GH-ibQ"/>
+                                </connections>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vo7-kg-vBg" customClass="RatingControl" customModule="mh47723_assignment4" customModuleProvider="target">
+                                <frame key="frameInset" minX="67" minY="578" width="240" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JYu-xE-d2J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="20Q-VE-LJT"/>
+                            <constraint firstItem="ZYp-X1-dm0" firstAttribute="leading" secondItem="dXa-GY-52B" secondAttribute="leading" id="32a-Xz-cpc"/>
+                            <constraint firstItem="ZYp-X1-dm0" firstAttribute="trailing" secondItem="Abj-l1-0T1" secondAttribute="trailing" id="4D6-tF-8Rz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZYp-X1-dm0" secondAttribute="trailing" id="77B-5S-dhA"/>
+                            <constraint firstItem="dXa-GY-52B" firstAttribute="top" secondItem="JYu-xE-d2J" secondAttribute="bottom" constant="15" id="9Ky-9F-3R8"/>
+                            <constraint firstItem="cF3-Jv-Hkq" firstAttribute="top" secondItem="ZYp-X1-dm0" secondAttribute="bottom" constant="26" id="IDj-X0-l2q"/>
+                            <constraint firstItem="ZYp-X1-dm0" firstAttribute="trailing" secondItem="dXa-GY-52B" secondAttribute="trailing" id="LWG-Jl-9rH"/>
+                            <constraint firstItem="JYu-xE-d2J" firstAttribute="top" secondItem="cF3-Jv-Hkq" secondAttribute="bottom" constant="8" symbolic="YES" id="MVB-c1-2av"/>
+                            <constraint firstItem="ZYp-X1-dm0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PUe-5l-Q47"/>
+                            <constraint firstItem="ZYp-X1-dm0" firstAttribute="leading" secondItem="l7W-uq-KTV" secondAttribute="leading" id="QNN-x7-pzB"/>
+                            <constraint firstItem="ZYp-X1-dm0" firstAttribute="leading" secondItem="Abj-l1-0T1" secondAttribute="leading" id="Ufb-El-SAQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l7W-uq-KTV" secondAttribute="trailing" id="bbm-I1-fuI"/>
+                            <constraint firstItem="l7W-uq-KTV" firstAttribute="top" secondItem="Abj-l1-0T1" secondAttribute="bottom" constant="21" id="eKd-qG-GMP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l7W-uq-KTV" secondAttribute="bottom" constant="108" id="gfa-GL-XOf"/>
+                            <constraint firstItem="ZYp-X1-dm0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jft-B3-TqC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JYu-xE-d2J" secondAttribute="trailing" id="oE2-5D-82B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cF3-Jv-Hkq" secondAttribute="trailing" id="trc-je-7KZ"/>
+                            <constraint firstItem="cF3-Jv-Hkq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tuZ-bA-yyX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgCity" destination="l7W-uq-KTV" id="FZ4-p5-NNK"/>
+                        <outlet property="textCity" destination="W66-X7-Er0" id="uVz-10-Nkm"/>
+                        <outlet property="textListEntries" destination="Abj-l1-0T1" id="k8B-zB-W6p"/>
+                        <outlet property="textName" destination="vAW-2u-cgz" id="OOf-Hr-Ipr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="A9V-zo-zcE">
+                    <connections>
+                        <action selector="selectImgFromLibrary:" destination="BYZ-38-t0r" id="hfB-bK-26i"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="116" y="83.208395802098963"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="austin.jpeg" width="1689" height="951"/>
+    </resources>
 </document>
